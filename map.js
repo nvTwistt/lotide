@@ -12,6 +12,7 @@ const map = function(array,callback) {
   }
   return results;
 }
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, x => x[0]);
-console.log(results1);
+module.exports = map;
+// const words = ["ground", "control", "to", "major", "tom"];
+// const results1 = map(words, x => x[0]);
+// console.log(results1);
