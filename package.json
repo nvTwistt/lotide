@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mtamkee/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a library that is similar to lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nvTwistt/lotide.git"
   },
-  "author": "",
+  "author": "Made by Matthew Tamkee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nvTwistt/lotide/issues"
