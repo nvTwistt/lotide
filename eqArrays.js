@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return true;
-  } else {
-    return false;
-  }
-};
+const assertEqual = require('./assertEqual');
 const eqArrays = function(firstArray, secondArray) {
   let boolArray = [];
   let numTrue = 0;
@@ -20,14 +14,10 @@ const eqArrays = function(firstArray, secondArray) {
       }
     }
     if (numTrue === arrayLength) {
-      return console.log(true);
+      return true;
     } else {
-      return console.log(false);
+      return false;
     }
   }
 }
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
-
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+module.exports = eqArrays;
